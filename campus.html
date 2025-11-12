@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Noshahi School System — Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <!-- ====== HEADER SECTION ====== -->
+<div class="topbar">
+  <div class="left">
+    <span><i class="fa-solid fa-phone"></i> 03 111 444 412</span>
+    <a href="mailto:info@noshahi.edu.pk"><i class="fa-solid fa-envelope"></i> info@noshahi.edu.pk</a>
+  </div><div class="right social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-linkedin-in"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</div>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
+    <div>
+      <div class="logo-title">Noshahi School System</div>
+      <div class="logo-subtitle">Inspiring global minds</div>
+    </div>
+  </div>
+
+  <nav>
+    <button class="burger" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+    <div class="nav-links" id="navLinks">
+       <a href="index.html">Home</a>
+        <a href="why noshahi.html">Why-noshahi</a>
+        <a href="campus.html" class="active">Campuses</a>
+        <a href="admission.html">Admissions</a>
+        <a href="journy.html">Our Journey</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="cta-btn" href="admission.html">Apply Now</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ===== HERO SECTION ===== -->
+<section class="campus-hero">
+  <h1>Our Campuses</h1>
+  <p>
+    Noshahi School System offers purpose-built campuses with modern facilities, 
+    fostering academic excellence, student well-being, and co-curricular growth 
+    in a safe, vibrant, and inspiring environment.
+  </p>
+</section>
+
+<!-- ===== CAMPUS LIST ===== -->
+<section class="campus-list">
+
+  <!-- Campus 1 (Image Left) -->
+  <div class="campus-card reverse">
+    <div class="campus-img" style="background-image: url('image/campuses.jpg');"></div>
+    <div class="campus-content">
+      <h2>Bahria Town Campus</h2>
+      <p>Canal Bank Road, Opposite Bahria Town, Lahore.</p>
+      <div class="campus-info">
+        <p>📞 +92-370-0646711</p>
+        <p>✉️ <a href="mailto:btl@jaadaschools.edu.pk">btl@jaadaschools.edu.pk</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Campus 2 (Image Right) -->
+  <div class="campus-card">
+    <div class="campus-img" style="background-image: url('image/campuses\ 2.jpg');"></div>
+    <div class="campus-content">
+      <h2>Central Park Campus</h2>
+      <p>0.5 KM Sue-e-Asal Road, off Ferozepur Road, Lahore.</p>
+      <div class="campus-info">
+        <p>📞 +92-370-0646701</p>
+        <p>✉️ <a href="mailto:cpl@jaadaschools.edu.pk">cpl@jaadaschools.edu.pk</a></p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Left Column -->
+    <div class="footer-about">
+      <img src="images/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
+      <p>
+        Noshahi Global Learning Hub is committed to academic excellence, strong values, 
+        and holistic development — nurturing future-ready, confident learners in a 
+        progressive environment.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle Column (Quick Links) -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why noshahi.html">Why Noshahi</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#contact">Enroll Now</a></li>
+      </ul>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-links">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="#life">Life at Noshahi</a></li>
+        <li><a href="#campuses">Campuses</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr>
+  <p class="footer-copy">Copyright © 2025 
+    <span class="brand">Noshahi School System</span>. All Rights Reserved.
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
+  </p>
+</footer>
+
+
+
+<script>
+  // ===== Mobile menu toggle =====
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+  });
+
+  // ===== Footer year auto update =====
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script>
+  // Smooth fade-in for campus cards
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".campus-card");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.2 });
+    cards.forEach(card => observer.observe(card));
+  });
+</script>
+
+
+</body>
+</html>

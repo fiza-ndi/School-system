@@ -1,0 +1,114 @@
+/* ===========================
+   💚 Responsive Navbar Fix
+   =========================== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  z-index: 999;
+}
+
+/* Logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 48px;
+  max-width: 100%;
+}
+
+.logo-title {
+  font-weight: 700;
+  color: #0d4a4a;
+  font-size: 1rem;
+}
+
+.logo-subtitle {
+  font-size: 12px;
+  color: #555;
+  margin-top: 2px;
+}
+
+/* Nav links desktop */
+.nav-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  color: #0d4a4a;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cta-btn {
+  background: #0d4a4a;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ffb703;
+  color: #000;
+}
+
+/* Burger button */
+.burger {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 24px;
+  color: #0d4a4a;
+  cursor: pointer;
+}
+
+/* ===== Mobile Styling ===== */
+@media (max-width: 900px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
