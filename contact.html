@@ -74,25 +74,40 @@
         <button type="submit">Send Message</button>
       </form>
     </div>
-
-    <div class="contact-info">
-      <div class="info-section">
-        <h3>Our Contact Details</h3>
-        <div class="info-item">
-          <strong>📍 Address:</strong>
-          Noshahi School System, Main Road, Lahore, Pakistan
-        </div>
-        <div class="info-item">
-          <strong>📞 Phone:</strong>
-          +92 300 1234567
-        </div>
-        <div class="info-item">
-          <strong>✉️ Email:</strong>
-          info@noshahischool.edu.pk
-        </div>
-      </div>
-    </div>
   </section>
+
+
+
+  <!-- =======================
+     📞 Contact Section
+======================== -->
+<section id="contact" class="contact-section">
+  <h2>📬 Get in Touch</h2>
+  <p class="contact-subtitle">We’d love to hear from you! Reach us anytime.</p>
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h3>Address</h3>
+      <p>Noshahi School System<br>Main Road, Lahore, Pakistan</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">📞</div>
+      <h3>Phone</h3>
+      <p>+92 300 1234567</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <p>info@noshahischool.edu.pk</p>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+
 
   <!-- MAP SECTION -->
   <section class="contact-map-section">
@@ -141,9 +156,9 @@
     
     <!-- Left Column -->
     <div class="footer-about">
-      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
+      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System  Logo" class="footer-logo">
       <p>
-        Noshahi Global Learning Hub is committed to academic excellence, strong values, 
+        Noshahi School System is committed to academic excellence, strong values, 
         and holistic development — nurturing future-ready, confident learners in a 
         progressive environment.
       </p>
@@ -182,7 +197,7 @@
 
   <hr>
   <p class="footer-copy">Copyright © 2025 
-    <span class="brand">Noshahi Global Learning Hub</span>. All Rights Reserved.
+    <span class="brand">Noshahi School System</span>. All Rights Reserved.
     <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
   </p>
 </footer>
@@ -210,6 +225,24 @@
   }, { threshold: 0.2 });
 
   animatedElements.forEach(el => observer.observe(el));
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu open/close on burger click
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu automatically when a nav link is clicked (on mobile)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  });
 </script>
 
 </body>

@@ -180,7 +180,7 @@
     <div class="footer-about">
       <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
       <p>
-        Noshahi Global Learning Hub is committed to academic excellence, strong values, 
+        Noshahi School System  is committed to academic excellence, strong values, 
         and holistic development — nurturing future-ready, confident learners in a 
         progressive environment.
       </p>
@@ -219,7 +219,7 @@
 
   <hr>
   <p class="footer-copy">Copyright © 2025 
-    <span class="brand">Noshahi Global Learning Hub</span>. All Rights Reserved.
+    <span class="brand">Noshahi School System</span>. All Rights Reserved.
      <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
   </p>
 
@@ -263,5 +263,23 @@
     setInterval(()=>goTo(index+1),7000);
 
       </script>
-      <script>
-        
+        <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu open/close on burger click
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu automatically when a nav link is clicked (on mobile)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  });
+</script>
+  </body>
+  </footer>>

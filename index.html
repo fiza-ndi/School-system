@@ -401,5 +401,24 @@ document.querySelectorAll("#values .card").forEach(card => {
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu open/close on burger click
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu automatically when a nav link is clicked (on mobile)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
